@@ -6,8 +6,9 @@
 - **Path to find Tomcat10.exe is** [`Program Files\Apache Software Foundation\Tomcat 10.1\bin`]()
 - After that, double click the `startup.bat` for our benefit.
 - Place the `welcome_servlet.html` in this path [`Program Files\Apache Software Foundation\Tomcat 10.1\webapps\examples`]()
-- Now, compile the `WelcomeServlet.java` and then a class file is generated `WelcomeServlet.class` place these two file in (classes folder) this path [`Program Files\Apache Software Foundation\Tomcat 10.1\webapps\examples\WEB-INF\classes`]()
-- Similarly compile the `LogoutServlet.java` and do the above procedure.
+
+- Now, compile the `WelcomeServlet.java`, `LogoutServlet.java` and then the class files are generated `WelcomeServlet.class`, `LogoutServlet.class` place these two file in (classes folder) this path [`Program Files\Apache Software Foundation\Tomcat 10.1\webapps\examples\WEB-INF\classes`]()
+
 - Update the existing `web.xml` available in the path `` with the below data
 
 ```xml
@@ -26,6 +27,14 @@
 <servlet-mapping>
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/WelcomeServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
 </servlet-mapping>
 ```
 
