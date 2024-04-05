@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <style>
+      h1 {
+        color: brown;
+        text-align: center;
+      }
+      .textbox {
+        color: coral;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Select the country name to find its capital</h1>
+      <form method="post">
+        Select country :
+        <select
+          name="country"
+          id="countrySelectBox"
+          onclick="findCapital();"
+          required
+        >
+          <option value=""></option>
+          <option value="New Delhi">India</option>
+          <option value="Canberra">Australia</option>
+          <option value="Washington D.C">USA</option>
+          <option value="London">United Kingdom</option>
+          <option value="Berlin">Germany</option>
+          <option value="Paris">France</option></select
+        ><br /><br />
+        Capital&nbsp;:&nbsp;<input
+          type="text"
+          id="capitalSelectBox"
+          class="textbox"
+        />
+      </form>
+    </center>
+    <script>
+      const findCapital = () => {
+        var country = document.getElementById("countrySelectBox").value;
+        var capital = document.getElementById("capitalSelectBox");
+        capital.value = country;
+      };
+    </script>
+  </body>
+</html>
