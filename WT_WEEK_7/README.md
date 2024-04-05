@@ -18,6 +18,14 @@
         <servlet-name>WelcomeServlet</servlet-name>
         <url-pattern>/WelcomeServlet</url-pattern>
 </servlet-mapping>
+<servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
 ```
 
 - Let's execute the program by going to the tomcat server by typing [`http://localhost:8080`]() in the browser address bar.
