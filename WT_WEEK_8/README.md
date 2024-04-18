@@ -8,7 +8,7 @@
 - After that, double click the `startup.bat` for our benefit.
 - Place the `calculator_servlet.html` in this path [`Program Files\Apache Software Foundation\Tomcat 10.1\webapps\examples`]()
 - Now, compile the `CalculatorServlet.java` and then a class file is generated `CalculatorServlet.class` place these two file in (classes folder) this path [`Program Files\Apache Software Foundation\Tomcat 10.1\webapps\examples\WEB-INF\classes`]()
-- Update the existing `web.xml` available in the path `` with the below data
+- Update the existing `web.xml` available in the path [`Program Files\Apache Software Foundation\Tomcat 10.1\webapps\examples\WEB-INF`]() with the below data
 
 ```xml
 <servlet>
