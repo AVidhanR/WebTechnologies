@@ -21,7 +21,7 @@
 </servlet-mapping>
 ```
 
-- Let's execute the program by going to the tomcat server by typing [`http://localhost:8080`]() in the browser address bar.
+- Let's execute the program by going to the tomcat server by typing [`http://localhost:8080`](http://localhost:8080) in the browser address bar.
 - Now in the address bar replace it with this url [`http://localhost:8080/examples/calculator_servlet.html`]()
 - That's it now you can access the web application with ease.
 
