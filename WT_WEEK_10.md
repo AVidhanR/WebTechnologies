@@ -1,17 +1,13 @@
 ```html
-<%@ page import="java.sql.*" %>
-<%@ page import="jakarta.sql.*" %>
-
+<%@ page import="java.sql.*" %>  
 <%
-  String url = "jdbc:mysql://localhost:3306/users";
-  String username = "root";
-  String password = "root";
-   
   try {
-    Connection con = DriverManager.getConnection(url, username, password);
+    Class.forName("com.mysql.cj.jdbc.Driver");  
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "root");
     Statement stmt = con.createStatement();
     ResultSet rS = stmt.executeQuery("SELECT * FROM users;");
 %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,18 +26,20 @@
       <tr>
         <td><%= rS.getInt(1) %></td>
         <td><%= rS.getString(2) %></td>
-        <td><%= rS.getString(3) %></td>
         <td><%= rS.getString(4) %></td>
+        <td><%= rS.getString(3) %></td>
       </tr>
     <% } %>
   </table>
+
 <% 
-  } 
-catch (Exception e) 
-{
+  } catch (Exception e) {
     out.println("Error: " + e.getMessage());
-  } %>
+  } 
+%>
+
 </body>
 </html>
+
 
 ```
