@@ -1,3 +1,15 @@
+> login.html
+```html
+<form action="login.jsp" method="post">
+  User name :<input type="text" name="user" /> password :<input
+    type="password"
+    name="pwd"
+  />
+  <input type="submit" />
+</form>
+
+```
+
 > login.jsp
 
 ```java
@@ -24,4 +36,6 @@
         response.sendRedirect("login.html"); 
     }
 %>
+
 ```
+_AVidhanR_
