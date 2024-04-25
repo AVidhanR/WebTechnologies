@@ -32,9 +32,6 @@
             out.println("Invalid password try again"); 
         }
     } 
-    else { 
-        response.sendRedirect("login.html"); 
-    }
 %>
 
 ```
