@@ -1,4 +1,18 @@
-```login.jsp
+> loginWeek13.html
+
+```html
+<form action="loginWeek13.jsp" method="post">
+  User name :<input type="text" name="user" /> password :<input
+    type="password"
+    name="pwd"
+  />
+  <input type="submit" />
+</form>
+
+```
+> loginWeek13.jsp
+
+```java
 <%@ page import ="java.sql.*" %> 
 <%@ page import ="jakarta.sql.*" %> 
 <% 
@@ -19,7 +33,7 @@
         }
     } 
     else { 
-        response.sendRedirect("login.html"); 
+        response.sendRedirect("loginWeek13.html"); 
     }
 %>
 
