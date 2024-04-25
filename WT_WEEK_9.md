@@ -4,6 +4,7 @@
 - IntelliJ IDEA - [`download here`](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
 - mysql-connector-j-8.3.0.jar file - [`download here`](https://dev.mysql.com/downloads/file/?id=525082)
 ----
+- Firstly, Open `Program Files\Apache Software Foundation\Tomcat10.1\webapps\examples` and add the below `login.html` and `login.jsp` 
 > login.html
 ```html
 <form action="login.jsp" method="post">
