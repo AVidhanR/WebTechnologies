@@ -11,4 +11,16 @@ public class MyUnit {
 > MyUnitTest.java
 
 ```java
+import org.junit.Assert;
+import org.junit.Test;
+
+public class MyUnitTest {
+    @Test
+    public void testConcater() {
+        MyUnit unit = new MyUnit();
+        String result = unit.concater("uno", "dos");
+        Assert.assertEquals("unodos", result);
+    }
+}
+
 ```
