@@ -20,8 +20,7 @@
     out.print("<p>Please Fill the Fields</p>"); 
   } else { 
     try { 
-      Class.forName("com.mysql.jdbc.Driver"); java.sql.Connection
-      con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","siva");
+      Class.forName("com.mysql.jdbc.Driver"); java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","siva");
       PreparedStatement ps2=con.prepareStatement("select * from users where user_id='"+user_name+"'"); 
       ResultSet rs=ps2.executeQuery(); 
       if(rs.next()) {
