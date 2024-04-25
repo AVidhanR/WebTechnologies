@@ -45,3 +45,14 @@
 %>
 
 ```
+> Create a dB
+```sql
+CREATE TABLE users (
+  user_id varchar(50) PRIMARY KEY,
+  password varchar(50)
+);
+
+INSERT INTO users VALUES("AVidhanR", "vinnu");
+
+```
+
