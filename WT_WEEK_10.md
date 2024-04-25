@@ -4,7 +4,7 @@
 - IntelliJ IDEA - download [`here`](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
 - mysql-connector-j-8.3.0.jar file - download [`here`](https://dev.mysql.com/downloads/file/?id=525082)
 
-- register.jsp
+#### register.jsp
 
 ```html
 <%@ page import="java.sql.*" %>  
