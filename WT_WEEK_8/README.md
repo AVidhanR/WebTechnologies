@@ -109,6 +109,6 @@ public class CalculatorServlet extends HttpServlet {
 - Now in the address bar replace it with this url [`http://localhost:8080/examples/calculator_servlet.html`]()
 - That's it now you can access the web application with ease.
 
-<font color="red">Note : </font>
+### Note:
 
 - Donot close the cmd window that appeared when you clicked the `Tomcat10.exe`
