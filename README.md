@@ -1,6 +1,7 @@
 ### Web Technologies (WT)
 - Languages used in WT are `HTML` `CSS` `JavaScript` `Java` `JDBC` `Java Servlets` and `Java Server Pages (JSP)`
 - The code for every week is given in individual folder with name convention `WT_WEEK_0`
+- Created by [`A Vidhan Reddy`](https://linktr.ee/itsvidhanreddy)
 ----
 ### Make sure to have...
 - MySQL Community Server (comes with MySQLWorkbench) - [`download here`](https://dev.mysql.com/downloads/file/?id=526408)
