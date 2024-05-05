@@ -7,14 +7,14 @@
 
 ---
 
-> register.jsp
+- Create a new `JSP` file i.e. `register.jsp` and add the following code.
 
 ```java
-<%@ page import="java.sql.*" %> 
+<%@ page import="java.sql.*" %>
 <% try {
-      Class.forName("com.mysql.cj.jdbc.Driver"); 
-      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "root"); 
-      Statement stmt = con.createStatement(); 
+      Class.forName("com.mysql.cj.jdbc.Driver");
+      Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "root");
+      Statement stmt = con.createStatement();
       ResultSet rS = stmt.executeQuery("SELECT * FROM users;"); %>
 
 <!DOCTYPE html>
@@ -41,9 +41,24 @@
       <% } %>
     </table>
 
-    <% } catch (Exception e) { 
-      out.println("Error: " + e.getMessage()); 
+    <% } catch (Exception e) {
+      out.println("Error: " + e.getMessage());
     } %>
   </body>
 </html>
+```
+
+- Create a new Schema `users`
+- Create a new table `users` (name of the table and schema can be same) in the selected schema ``users`
+
+```sql
+CREATE TABLE users (
+  id INT,
+  name VARCHAR(50),
+  password VARCHAR(50),
+  email VARCHAR(50),
+  phone_number VARCHAR(50)
+);
+
+INSERT INTO users VALUES (1, "AVidhanR", "1234567", "avr@gmail.com", "9988776655");
 ```
