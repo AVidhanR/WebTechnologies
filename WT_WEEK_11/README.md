@@ -1,11 +1,4 @@
-### Make sure to have...
-
-- MySQL Community Server (comes with MySQLWorkbench) - [`download here`](https://dev.mysql.com/downloads/file/?id=526408)
-- Tomcat 10.1 - [`download here`](https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.23/bin/apache-tomcat-10.1.23.exe)
-- IntelliJ IDEA - [`download here`](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
-- mysql-connector-j-8.3.0.jar file - [`download here`](https://dev.mysql.com/downloads/file/?id=525082)
-
----
+## Code Walkthrough
 
 - Open `IntelliJ IDEA`
 - Create a new `Java` Project and name it as `Unit Test`
